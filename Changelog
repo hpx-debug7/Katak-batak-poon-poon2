@@ -1,0 +1,47 @@
+# Changelog
+
+All notable changes to PixelDrop will be documented here.
+Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+---
+
+## [Unreleased]
+- Dark mode support for the summary report (lol)
+- WebP animated image support (maybe)
+
+---
+
+## [1.2.0] - 2024-11-03
+### Added
+- Watch mode (`pixeldrop watch`) for auto-compression on file save
+- Support for `.webp` format
+
+### Fixed
+- CLI crash when output directory doesn't exist yet (now auto-creates it)
+- Incorrect byte count in summary when processing large batches
+
+---
+
+## [1.1.0] - 2024-09-18
+### Added
+- `pixeldrop.config.json` support for persistent configuration
+- `--preserve-structure` flag to mirror source directory layout in output
+
+### Changed
+- Quality defaults tuned: JPEG 80, PNG 90, WebP 85
+
+---
+
+## [1.0.1] - 2024-08-05
+### Fixed
+- Panic on empty directory input
+- Wrong exit code on compression failure
+
+---
+
+## [1.0.0] - 2024-07-20
+### Added
+- Initial release 🎉
+- Compress JPEG and PNG via CLI
+- Batch directory processing
+- Summary report output
